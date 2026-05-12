@@ -16,16 +16,26 @@ public class StudentController {
 	StudentService studentService;
 	
 	@RequestMapping("/saveStudent")
-	public String saveStudent()
+	public Student saveStudent()
 	{
 		Student s1=Student.builder()
-				.sname("Ben")
-				.dname("Commerce")
-				.per(68.5)
+				.sname("Chris")
+				.dname("Engg")
+				.per(98.5)
 				.build();
 		
-		studentService.saveStudent(s1);
-		return "Record Saved";
+		return studentService.saveStudent(s1);
+		//return "Record Saved";
+		
+	}
+	
+	
+	@RequestMapping("/getStudent")
+	public Student getStudent()
+	{
+		int studRollNo=2;
+		return studentService.getStudent(studRollNo);
+		//return "Record Saved";
 		
 	}
 
