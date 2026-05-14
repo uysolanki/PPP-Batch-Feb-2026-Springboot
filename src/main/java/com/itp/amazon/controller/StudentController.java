@@ -1,8 +1,14 @@
 package com.itp.amazon.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -11,8 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.itp.amazon.entity.Student;
 import com.itp.amazon.service.StudentService;
 
-import jakarta.websocket.server.PathParam;
-
 @RestController	//return json
 //@Controller     //return html
 public class StudentController {
@@ -20,7 +24,19 @@ public class StudentController {
 	@Autowired
 	StudentService studentService;
 	
-	@RequestMapping("/saveStudent")
+	@RequestMapping("/test")
+	public String test()
+	{
+		return "Virat";
+	}
+	
+	@RequestMapping("/test1")
+	public ResponseEntity<String> test1()
+	{
+		return new ResponseEntity<String> ("Virat",HttpStatus.OK);
+	}
+	
+	@PostMapping("/saveStudent")
 	public Student saveStudent()
 	{
 		Student s1=Student.builder()
@@ -34,7 +50,19 @@ public class StudentController {
 		
 	}
 	
-	@RequestMapping("/saveStudentUsingRequestParam")
+	@PostMapping("/saveStudent1")
+	public ResponseEntity<Student> saveStudent1()
+	{
+		Student s1=Student.builder()
+				.sname("Chris")
+				.dname("Engg")
+				.per(98.5)
+				.build();
+		
+		return new ResponseEntity<Student>(studentService.saveStudent(s1), HttpStatus.CREATED);	
+	}
+	
+	@PostMapping("/saveStudentUsingRequestParam")
 	public Student saveStudentUsingRequestParam(
 			@RequestParam("a") String studentName,
 			@RequestParam("b") String deptName,
@@ -52,7 +80,7 @@ public class StudentController {
 		
 	}
 	
-	@RequestMapping("/saveStudentUsingRequestParam1")
+	@PostMapping("/saveStudentUsingRequestParam1")
 	public Student saveStudentUsingRequestParam1(
 			@RequestParam String studentName,
 			@RequestParam String deptName,
@@ -70,8 +98,25 @@ public class StudentController {
 		
 	}
 	
+	@PostMapping("/saveStudentUsingRequestParam2")
+	public ResponseEntity<Student> saveStudentUsingRequestParam2(
+			@RequestParam("a") String studentName,
+			@RequestParam("b") String deptName,
+			@RequestParam("c") double studentPer
+			)
+	{
+		Student s1=Student.builder()
+				.sname(studentName)
+				.dname(deptName)
+				.per(studentPer)
+				.build();
+		
+		return new ResponseEntity<Student>(studentService.saveStudent(s1), HttpStatus.CREATED);
+		//return "Record Saved";
+		
+	}
 	
-	@RequestMapping("/saveStudentUsingPathVariable/{a}/{b}/{c}")
+	@PostMapping("/saveStudentUsingPathVariable/{a}/{b}/{c}")
 	public Student saveStudentUsingPathVariable(
 			@PathVariable("a") String studentName,
 			@PathVariable("b") String deptName,
@@ -89,7 +134,7 @@ public class StudentController {
 		
 	}
 	
-	@RequestMapping("/saveStudentUsingPathVariable1/{studentName}/{deptName}/{studentPer}")
+	@PostMapping("/saveStudentUsingPathVariable1/{studentName}/{deptName}/{studentPer}")
 	public Student saveStudentUsingPathVariable1(
 			@PathVariable String studentName,
 			@PathVariable String deptName,
@@ -107,22 +152,44 @@ public class StudentController {
 		
 	}
 	
-	@RequestMapping("/saveStudentUsingRequestBody")
+	@PostMapping("/saveStudentUsingRequestBody")
 	public Student saveStudentUsingRequestBody(@RequestBody Student s1)
 	{
 		return studentService.saveStudent(s1);
-		
 	}
 	
 	
 	
-	@RequestMapping("/getStudent")
-	public Student getStudent()
+	@GetMapping("/getAllStudents")
+	public List<Student> getAllStudents()			//fixed status code a= 200 fixed status message OK
 	{
-		int studRollNo=2;
-		return studentService.getStudent(studRollNo);
-		//return "Record Saved";
-		
+		return studentService.getAllStudents();
+	}
+	
+	@GetMapping("/getAllStudents1")
+	public ResponseEntity<List<Student>> getAllStudents1()			//fixed status code a= 200 fixed status message OK
+	{
+		return new ResponseEntity<List<Student>>(studentService.getAllStudents(),HttpStatus.OK);
+	}
+	
+	@GetMapping("/getAllStudents2")
+	public ResponseEntity<List<Student>> getAllStudents2()			//fixed status code a= 200 fixed status message OK
+	{
+		List<Student> studs=studentService.getAllStudents();
+		return new ResponseEntity<List<Student>>(studs,HttpStatus.OK);
+	}
+	
+	@GetMapping("/getStudent/{rollno}")
+	public ResponseEntity<?> getStudent(@PathVariable int rollno)
+	{
+		try
+		{
+		return new ResponseEntity<Student>(studentService.getStudent(rollno), HttpStatus.OK);
+		}
+		catch(RuntimeException ex1)
+		{
+		return new ResponseEntity<String>("Student with Roll Number " + rollno + " does not  Exist",HttpStatus.BAD_REQUEST);
+		}
 	}
 
 }
@@ -135,3 +202,7 @@ public class StudentController {
     "per": 78.6
 }
 */
+
+
+/* return 1 ) directly : limitation //fixed status code a= 200 fixed status message OK
+         2 ) ResponseEntity<Student>  ,ResponseEntity<List<Student>>  , ResponseEntity<String> */
