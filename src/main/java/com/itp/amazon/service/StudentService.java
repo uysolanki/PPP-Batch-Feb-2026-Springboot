@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.itp.amazon.entity.Student;
+import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.repository.StudentRepository;
 
 @Service
@@ -35,5 +36,29 @@ public class StudentService {
 
 	public List<Student> getAllStudents() {
 		return studentRepository.findAll();
+	}
+
+	public Student getStudent1(int rollno) throws ResourceNotFoundException
+	{
+		if(studentRepository.existsById(rollno))
+		{
+			Optional<Student> optStudent=studentRepository.findById(rollno);	
+			return optStudent.get();
+		}
+		throw new ResourceNotFoundException("Student with roll number "+ rollno + " does not exist");
+	}
+
+	public List<Student> getStudentAboveBasePercentage(double basePer) {
+//		return studentRepository.getStudentsByPer(basePer);   //using nativeQuery
+		return studentRepository.findByPerGreaterThan(basePer);
+	}
+
+	public List<Student> getStudentByDepartment(String deptname) {
+		//return studentRepository.getStudentsByDeptname(deptname);  //using nativeQuery
+		return studentRepository.findByDname(deptname);
+	}
+
+	public List<Student> getStudentBetweenPercentageRange(double start, double end) {
+		return studentRepository.findByPerBetween(start, end);
 	}
 }

@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.itp.amazon.entity.Student;
+import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.service.StudentService;
 
 @RestController	//return json
@@ -191,7 +192,43 @@ public class StudentController {
 		return new ResponseEntity<String>("Student with Roll Number " + rollno + " does not  Exist",HttpStatus.BAD_REQUEST);
 		}
 	}
+	
+	@GetMapping("/getStudent1/{rollno}")
+	public ResponseEntity<?> getStudent1(@PathVariable int rollno)
+	{
+		try
+		{
+		return new ResponseEntity<Student>(studentService.getStudent1(rollno), HttpStatus.OK);
+		}
+		catch(ResourceNotFoundException ex1)
+		{
+		return new ResponseEntity<String>(ex1.getMessage(),HttpStatus.BAD_REQUEST);
+		}
+	}
+	
+	@GetMapping("/getStudent2/{rollno}")
+	public ResponseEntity<Student> getStudent2(@PathVariable int rollno) //13
+	{
+		return new ResponseEntity<Student>(studentService.getStudent1(rollno), HttpStatus.OK);
+	}
 
+	@GetMapping("/getStudentAboveBasePercentage/{basePer}")
+	public ResponseEntity<List<Student>> getStudentAboveBasePercentage(@PathVariable double basePer) //13
+	{
+		return new ResponseEntity<List<Student>>(studentService.getStudentAboveBasePercentage(basePer), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getStudentBetweenPercentageRange/{start}/{end}")
+	public ResponseEntity<List<Student>> getStudentBetweenPercentageRange(@PathVariable double start,@PathVariable double end) //13
+	{
+		return new ResponseEntity<List<Student>>(studentService.getStudentBetweenPercentageRange(start,end), HttpStatus.OK);
+	}
+	
+	@GetMapping("/getStudentByDepartment/{deptname}")
+	public ResponseEntity<List<Student>> getStudentByDepartment(@PathVariable String deptname) //13
+	{
+		return new ResponseEntity<List<Student>>(studentService.getStudentByDepartment(deptname), HttpStatus.OK);
+	}
 }
 
 /*
