@@ -3,8 +3,8 @@ package com.itp.amazon.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -229,6 +229,20 @@ public class StudentController {
 	{
 		return new ResponseEntity<List<Student>>(studentService.getStudentByDepartment(deptname), HttpStatus.OK);
 	}
+	
+	@GetMapping("/getStudentsByPage/{pageNumber}/{pageSize}")
+	public ResponseEntity<Page<Student>> getStudentsByPage(@PathVariable int pageNumber, @PathVariable int pageSize)			//fixed status code a= 200 fixed status message OK
+	{
+		
+		return new ResponseEntity<Page<Student>>(studentService.getStudentsByPage(pageNumber,pageSize),HttpStatus.OK);
+	}
+	
+	@GetMapping("/getStudentsByPageSorted/{fieldName}/{pageNumber}/{pageSize}")
+	public ResponseEntity<Page<Student>> getStudentsByPageSorted(@PathVariable String fieldName, @PathVariable int pageNumber, @PathVariable int pageSize)			//fixed status code a= 200 fixed status message OK
+	{
+		return new ResponseEntity<Page<Student>>(studentService.getStudentsByPageSorted(fieldName,pageNumber,pageSize),HttpStatus.OK);
+	}
+	
 }
 
 /*
