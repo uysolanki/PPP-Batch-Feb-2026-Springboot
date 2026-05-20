@@ -72,4 +72,33 @@ public class StudentService {
 	public Page<Student> getStudentsByPageSorted(String fieldName, int pageNumber, int pageSize) {
 		return studentRepository.findAll(PageRequest.of(pageNumber, pageSize).withSort(Sort.by(Sort.Direction.ASC,fieldName)));
 	}
+
+	public void deleteStudent(int rollno) {
+		if(studentRepository.existsById(rollno))
+		{
+			studentRepository.deleteById(rollno);
+			return;
+		}
+		throw new ResourceNotFoundException("Student with roll number "+ rollno + " does not exist");
+		
+	}
+
+	public Student updateStudent(int rollno, Student newValues) //1 {sname:"Alexander", dept:"Diploma", per:99.9}
+	{
+		if(studentRepository.existsById(rollno))
+		{
+			Optional<Student> optStudent=studentRepository.findById(rollno);	
+			Student studentFromDB=optStudent.get();
+			studentFromDB.setPer(newValues.getPer());
+			studentFromDB.setSname(newValues.getSname());
+			studentFromDB.setDname(newValues.getDname());
+//			studentFromDB=Student.builder()
+//					.per(newValues.getPer())
+//					.sname(newValues.getSname())
+//					.dname(newValues.getDname())
+//					.build();
+			return studentRepository.save(studentFromDB);	
+		}
+		throw new ResourceNotFoundException("Student with roll number "+ rollno + " does not exist");
+	}
 }
