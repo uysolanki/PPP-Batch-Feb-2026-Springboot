@@ -3,12 +3,14 @@ package com.itp.amazon.service;
 import java.util.List;
 import java.util.Optional;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
+import com.itp.amazon.dto.StudentDTO;
 import com.itp.amazon.entity.Student;
 import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.repository.StudentRepository;
@@ -18,6 +20,9 @@ public class StudentService {
 
 	@Autowired
 	StudentRepository studentRepository;
+	
+	@Autowired
+	ModelMapper modelMapper;
 
 	public Student saveStudent(Student s1) {
 		return studentRepository.save(s1);
@@ -100,5 +105,12 @@ public class StudentService {
 			return studentRepository.save(studentFromDB);	
 		}
 		throw new ResourceNotFoundException("Student with roll number "+ rollno + " does not exist");
+	}
+
+	public StudentDTO saveStudentUsingDTO(StudentDTO studDTO) {
+		Student student=modelMapper.map(studDTO, Student.class);
+		Student studentSavedToDB=studentRepository.save(student);
+		return modelMapper.map(studentSavedToDB, StudentDTO.class);
+		
 	}
 }

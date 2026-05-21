@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.itp.amazon.dto.StudentDTO;
 import com.itp.amazon.entity.Student;
 import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.service.StudentService;
@@ -159,6 +160,12 @@ public class StudentController {
 	public Student saveStudentUsingRequestBody(@RequestBody Student s1)
 	{
 		return studentService.saveStudent(s1);
+	}
+	
+	@PostMapping("/saveStudentUsingDTO")
+	public ResponseEntity<StudentDTO> saveStudentUsingDTO(@RequestBody StudentDTO studDTO)
+	{
+		return new ResponseEntity<StudentDTO>(studentService.saveStudentUsingDTO(studDTO),HttpStatus.OK);
 	}
 	
 	
