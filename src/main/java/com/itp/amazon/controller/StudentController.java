@@ -21,6 +21,8 @@ import com.itp.amazon.entity.Student;
 import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.service.StudentService;
 
+import jakarta.validation.Valid;
+
 @RestController	//return json
 //@Controller     //return html
 public class StudentController {
@@ -164,6 +166,12 @@ public class StudentController {
 	
 	@PostMapping("/saveStudentUsingDTO")
 	public ResponseEntity<StudentDTO> saveStudentUsingDTO(@RequestBody StudentDTO studDTO)
+	{
+		return new ResponseEntity<StudentDTO>(studentService.saveStudentUsingDTO(studDTO),HttpStatus.OK);
+	}
+	
+	@PostMapping("/saveStudentUsingDTOWithValidation")
+	public ResponseEntity<StudentDTO> saveStudentUsingDTOWithValidation(@Valid @RequestBody  StudentDTO studDTO)
 	{
 		return new ResponseEntity<StudentDTO>(studentService.saveStudentUsingDTO(studDTO),HttpStatus.OK);
 	}

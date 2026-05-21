@@ -2,6 +2,7 @@ package com.itp.amazon.entity;
 
 import java.time.LocalDateTime;
 
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -27,8 +28,12 @@ public class Student {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer rno;
+	
+    @Column(nullable = false)
 	private String sname;
+    @Column(nullable = false)
 	private String dname;
+    @Column(nullable = false)
 	private double per;
 	
 	private LocalDateTime createdAt;
