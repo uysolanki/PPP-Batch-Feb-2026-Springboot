@@ -1,10 +1,5 @@
 package com.itp.amazon.dto;
 
-import java.time.LocalDateTime;
-
-import com.itp.amazon.entity.Product;
-import com.itp.amazon.entity.Rating;
-
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
