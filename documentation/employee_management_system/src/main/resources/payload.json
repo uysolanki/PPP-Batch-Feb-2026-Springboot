@@ -1,0 +1,389 @@
+[
+    {
+        "departmentName": "Information Technology",
+        "departmentCode": "IT-001",
+        "description": "Handles all software development",
+        "departmentType": "Technical",
+        "budget": 5000000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Rahul Sharma",
+                "gender": "Male",
+                "designation": "Senior Software Engineer",
+                "joiningDate": "2022-06-15",
+                "reportingManager": "Amit Verma",
+                "salary": 85000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Koregaon Park",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411001"
+                    },
+                    {
+                        "locality": "Hinjewadi Phase 1",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411057"
+                    }
+                ]
+            },
+            {
+                "name": "Priya Mehta",
+                "gender": "Female",
+                "designation": "Java Developer",
+                "joiningDate": "2023-03-01",
+                "reportingManager": "Rahul Sharma",
+                "salary": 65000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Baner Road",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411045"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "Human Resources",
+        "departmentCode": "HR-001",
+        "description": "Manages recruitment, payroll and employee relations",
+        "departmentType": "Non-Technical",
+        "budget": 2000000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Sneha Patil",
+                "gender": "Female",
+                "designation": "HR Manager",
+                "joiningDate": "2021-08-20",
+                "reportingManager": "Vikram Joshi",
+                "salary": 70000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Andheri West",
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "400058"
+                    }
+                ]
+            },
+            {
+                "name": "Rohan Desai",
+                "gender": "Male",
+                "designation": "HR Executive",
+                "joiningDate": "2023-05-15",
+                "reportingManager": "Sneha Patil",
+                "salary": 45000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Kothrud",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411038"
+                    }
+                ]
+            },
+            {
+                "name": "Anjali Singh",
+                "gender": "Female",
+                "designation": "Recruitment Specialist",
+                "joiningDate": "2022-11-01",
+                "reportingManager": "Sneha Patil",
+                "salary": 50000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Wakad",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411057"
+                    },
+                    {
+                        "locality": "Borivali East",
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "400066"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "Finance",
+        "departmentCode": "FIN-001",
+        "description": "Manages company accounts, budgets and financial reporting",
+        "departmentType": "Non-Technical",
+        "budget": 3000000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Vikram Joshi",
+                "gender": "Male",
+                "designation": "Chief Financial Officer",
+                "joiningDate": "2018-04-01",
+                "reportingManager": "CEO",
+                "salary": 200000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Juhu",
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "400049"
+                    }
+                ]
+            },
+            {
+                "name": "Kavita Nair",
+                "gender": "Female",
+                "designation": "Senior Accountant",
+                "joiningDate": "2021-02-15",
+                "reportingManager": "Vikram Joshi",
+                "salary": 75000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Aundh",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411007"
+                    }
+                ]
+            },
+            {
+                "name": "Suresh Kumar",
+                "gender": "Male",
+                "designation": "Financial Analyst",
+                "joiningDate": "2022-09-01",
+                "reportingManager": "Kavita Nair",
+                "salary": 60000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Pimpri",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411018"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "Marketing",
+        "departmentCode": "MKT-001",
+        "description": "Handles brand promotion, digital marketing and client acquisition",
+        "departmentType": "Non-Technical",
+        "budget": 2500000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Neha Kulkarni",
+                "gender": "Female",
+                "designation": "Marketing Manager",
+                "joiningDate": "2020-07-01",
+                "reportingManager": "CEO",
+                "salary": 95000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Kalyani Nagar",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411006"
+                    }
+                ]
+            },
+            {
+                "name": "Arjun Rao",
+                "gender": "Male",
+                "designation": "Digital Marketing Specialist",
+                "joiningDate": "2023-01-10",
+                "reportingManager": "Neha Kulkarni",
+                "salary": 55000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Shivajinagar",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411005"
+                    }
+                ]
+            },
+            {
+                "name": "Pooja Iyer",
+                "gender": "Female",
+                "designation": "Content Writer",
+                "joiningDate": "2023-06-20",
+                "reportingManager": "Neha Kulkarni",
+                "salary": 40000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Deccan Gymkhana",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411004"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "Quality Assurance",
+        "departmentCode": "QA-001",
+        "description": "Ensures software quality through testing and validation",
+        "departmentType": "Technical",
+        "budget": 1800000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Sanjay Bhatt",
+                "gender": "Male",
+                "designation": "QA Lead",
+                "joiningDate": "2019-11-01",
+                "reportingManager": "Amit Verma",
+                "salary": 90000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Hadapsar",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411028"
+                    }
+                ]
+            },
+            {
+                "name": "Divya Menon",
+                "gender": "Female",
+                "designation": "Automation Test Engineer",
+                "joiningDate": "2022-04-15",
+                "reportingManager": "Sanjay Bhatt",
+                "salary": 68000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Magarpatta City",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411013"
+                    }
+                ]
+            },
+            {
+                "name": "Ravi Tiwari",
+                "gender": "Male",
+                "designation": "Manual Test Engineer",
+                "joiningDate": "2023-08-01",
+                "reportingManager": "Sanjay Bhatt",
+                "salary": 45000.00,
+                "active": false,
+                "addresses": [
+                    {
+                        "locality": "Kondhwa",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411048"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "DevOps",
+        "departmentCode": "DEV-001",
+        "description": "Manages CI/CD pipelines, cloud infrastructure and deployments",
+        "departmentType": "Technical",
+        "budget": 3500000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Kiran Patil",
+                "gender": "Male",
+                "designation": "DevOps Architect",
+                "joiningDate": "2019-03-01",
+                "reportingManager": "Amit Verma",
+                "salary": 150000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Balewadi",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411045"
+                    }
+                ]
+            },
+            {
+                "name": "Meera Pillai",
+                "gender": "Female",
+                "designation": "Cloud Engineer",
+                "joiningDate": "2021-06-10",
+                "reportingManager": "Kiran Patil",
+                "salary": 95000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Pashan",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411021"
+                    },
+                    {
+                        "locality": "Powai",
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "400076"
+                    }
+                ]
+            },
+            {
+                "name": "Nikhil Gore",
+                "gender": "Male",
+                "designation": "Site Reliability Engineer",
+                "joiningDate": "2022-12-01",
+                "reportingManager": "Kiran Patil",
+                "salary": 80000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Warje",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411058"
+                    }
+                ]
+            }
+        ]
+    }
+]
