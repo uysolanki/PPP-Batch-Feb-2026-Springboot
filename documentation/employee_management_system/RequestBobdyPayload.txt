@@ -1,0 +1,116 @@
+[
+    {
+        "departmentName": "Information Technology",
+        "departmentCode": "IT-001",
+        "description": "Handles all software development",
+        "departmentType": "Technical",
+        "budget": 5000000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Rahul Sharma",
+                "gender": "Male",
+                "designation": "Senior Software Engineer",
+                "joiningDate": "2022-06-15",
+                "reportingManager": "Amit Verma",
+                "salary": 85000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Koregaon Park",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411001"
+                    },
+                    {
+                        "locality": "Hinjewadi Phase 1",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411057"
+                    }
+                ]
+            },
+            {
+                "name": "Priya Mehta",
+                "gender": "Female",
+                "designation": "Java Developer",
+                "joiningDate": "2023-03-01",
+                "reportingManager": "Rahul Sharma",
+                "salary": 65000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Baner Road",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411045"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "departmentName": "Human Resources",
+        "departmentCode": "HR-001",
+        "description": "Manages recruitment, payroll and employee relations",
+        "departmentType": "Non-Technical",
+        "budget": 2000000.00,
+        "status": "ACTIVE",
+        "employees": [
+            {
+                "name": "Sneha Patil",
+                "gender": "Female",
+                "designation": "HR Manager",
+                "joiningDate": "2021-08-20",
+                "reportingManager": "Vikram Joshi",
+                "salary": 70000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Andheri West",
+                        "city": "Mumbai",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "400058"
+                    }
+                ]
+            },
+            {
+                "name": "Rohan Desai",
+                "gender": "Male",
+                "designation": "HR Executive",
+                "joiningDate": "2023-05-15",
+                "reportingManager": "Sneha Patil",
+                "salary": 45000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Kothrud",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411038"
+                    }
+                ]
+            },
+            {
+                "name": "Anjali Singh",
+                "gender": "Female",
+                "designation": "Recruitment Specialist",
+                "joiningDate": "2022-11-01",
+                "reportingManager": "Sneha Patil",
+                "salary": 50000.00,
+                "active": true,
+                "addresses": [
+                    {
+                        "locality": "Wakad",
+                        "city": "Pune",
+                        "state": "Maharashtra",
+                        "country": "India",
+                        "zipCode": "411057"
+                    },
+                    {
+                        "locality": "Borivali East",
