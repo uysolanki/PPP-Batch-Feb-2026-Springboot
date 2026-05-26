@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -175,13 +176,18 @@ public class StudentController {
 		return new ResponseEntity<StudentDTO>(studentService.saveStudentUsingDTO(studDTO),HttpStatus.OK);
 	}
 	
+	
 	@PostMapping("/saveStudentUsingDTOWithValidation")
 	public ResponseEntity<StudentDTO> saveStudentUsingDTOWithValidation(@Valid @RequestBody  StudentDTO studDTO)
 	{
-		return new ResponseEntity<StudentDTO>(studentService.saveStudentUsingDTO(studDTO),HttpStatus.OK);
+		logger.info("Request Received to save Student {}",studDTO.getSname());
+		StudentDTO stDTO=studentService.saveStudentUsingDTO(studDTO);
+		logger.info("Record saved successfully for Student {}",studDTO.getSname());
+		return new ResponseEntity<StudentDTO>(stDTO,HttpStatus.OK);
 	}
 	
 	
+		
 	
 	@GetMapping("/getAllStudents")
 	public List<Student> getAllStudents()			//fixed status code a= 200 fixed status message OK
