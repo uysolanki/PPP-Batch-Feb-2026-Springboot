@@ -2,6 +2,8 @@ package com.itp.amazon.controller;
 
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -29,6 +31,9 @@ public class StudentController {
 	
 	@Autowired
 	StudentService studentService;
+	
+	private static final Logger logger =
+            LoggerFactory.getLogger(StudentService.class);
 	
 	@RequestMapping("/test")
 	public String test()
@@ -181,6 +186,7 @@ public class StudentController {
 	@GetMapping("/getAllStudents")
 	public List<Student> getAllStudents()			//fixed status code a= 200 fixed status message OK
 	{
+		logger.info("Inside Controller to get all students");
 		return studentService.getAllStudents();
 	}
 	
