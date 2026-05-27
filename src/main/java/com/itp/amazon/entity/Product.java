@@ -2,8 +2,12 @@ package com.itp.amazon.entity;
 
 import java.time.LocalDateTime;
 
+import com.itp.amazon.util.ProductCategory;
+
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import jakarta.persistence.FetchType;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -34,7 +38,9 @@ public class Product {
     public String title;
     public double price;
     public String description;
-    public String category;
+    
+    @Enumerated(EnumType.STRING)
+    public ProductCategory category;
     public String image;
     
     @OneToOne(cascade = CascadeType.ALL,fetch = FetchType.EAGER)
