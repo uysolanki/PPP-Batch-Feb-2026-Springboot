@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
 import com.itp.amazon.dto.ProductDTO;
 import com.itp.amazon.service.ProductService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
 
 @RestController
@@ -29,6 +31,7 @@ public class ProductController {
 	
 	private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
 	
+	@Operation(summary = "Saves Multiple Product", description = "Accepts a List<ProductDTO> and saves them to the database. Returns the saved products ")
 	@PostMapping("/addProducts")
 	public ResponseEntity<List<ProductDTO>> addMultipleProducts(@RequestBody List<ProductDTO> productDTOs)
 	{
@@ -36,6 +39,9 @@ public class ProductController {
 		return new ResponseEntity<List<ProductDTO>>(productService.addProducts(productDTOs), HttpStatus.CREATED);
 	}
 	
+	@Operation(summary = "Saves Single Product", description = "Accepts a single ProductDTO and saves it to the database. Returns the saved productDTO.")
+	@ApiResponse(responseCode = "200", description = "Product was successfully deleted from the system.") 
+	@ApiResponse(responseCode = "404", description = "Resource Clean Fail: The provided Product ID does not exist in the database.")
 	@PostMapping("/addProduct")
 	public ResponseEntity<ProductDTO> addProduct(@Valid @RequestBody ProductDTO productDTO)
 	{

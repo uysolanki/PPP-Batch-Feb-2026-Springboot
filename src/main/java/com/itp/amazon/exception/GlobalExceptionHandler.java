@@ -12,17 +12,22 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.http.converter.HttpMessageNotReadableException;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
+import org.springframework.web.bind.annotation.RestControllerAdvice;
 
-import com.itp.amazon.service.StudentService;
+import com.itp.amazon.controller.ProductController;
+import com.itp.amazon.controller.StudentController;
 import com.itp.amazon.util.ProductCategory;
 
-@ControllerAdvice
+//@ControllerAdvice
+@RestControllerAdvice(assignableTypes = {
+	    ProductController.class, StudentController.class
+	})
 public class GlobalExceptionHandler {
 
-	private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
+	//private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
 
+	private static final Logger logger =LoggerFactory.getLogger(GlobalExceptionHandler.class);
 	@ExceptionHandler(ResourceNotFoundException.class)
 	public ResponseEntity<String> handleResourceNotFoundException(ResourceNotFoundException ex) {
 		return new ResponseEntity<String>(ex.getMessage(), HttpStatus.BAD_REQUEST);

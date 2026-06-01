@@ -37,7 +37,7 @@ public class ProductService {
 		.toList();
 		
 		List<Product> productsSavedToDB =productRepository.saveAll(products);
-		
+		logger.info("Request completed in service to add products " + productDTOs.size());
 		List<ProductDTO> convertedproductToDTOs=productsSavedToDB.stream()
 				.map(prod->modelMapper.map(prod, ProductDTO.class))
 				.toList();

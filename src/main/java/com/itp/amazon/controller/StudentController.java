@@ -23,6 +23,9 @@ import com.itp.amazon.entity.Student;
 import com.itp.amazon.exception.ResourceNotFoundException;
 import com.itp.amazon.service.StudentService;
 
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.Parameter;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import jakarta.validation.Valid;
 
 @RestController	//return json
@@ -271,9 +274,11 @@ public class StudentController {
 		return new ResponseEntity<Page<Student>>(studentService.getStudentsByPageSorted(fieldName,pageNumber,pageSize),HttpStatus.OK);
 	}
 	
-	
+	@Operation(summary = "Deletes Single Student", description = "Accepts a single Student ID and deletes it from the database.")
+	@ApiResponse(responseCode = "200", description = "Student was successfully deleted from the system.") 
+	@ApiResponse(responseCode = "404", description = "Resource Clean Fail: The provided Student ID does not exist in the database.")
 	@DeleteMapping("/deleteStudent/{rollno}")
-	public ResponseEntity<String> deleteStudent(@PathVariable int rollno)			
+	public ResponseEntity<String> deleteStudent(@Parameter(description = "The primary key ID of the Student you want to Delete", example = "1") @PathVariable int rollno)			
 	{
 		studentService.deleteStudent(rollno);
 		return new ResponseEntity<String>("Student Record Deleted having rollno "+rollno,HttpStatus.OK);
