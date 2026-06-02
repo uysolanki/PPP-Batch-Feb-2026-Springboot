@@ -27,17 +27,17 @@ public class ProductService {
 	
 	//private static final Logger logger=Logger.getLogger(ProductService.class);
 
-	private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
+	//private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
 	
 	public List<ProductDTO> addProducts(List<ProductDTO> productDTOs) {
 		
-		logger.info("Request received in service to add product " + productDTOs.size());
+		//logger.info("Request received in service to add product " + productDTOs.size());
 		List<Product> products=productDTOs.stream()
 		.map(dto->modelMapper.map(dto, Product.class))
 		.toList();
 		
 		List<Product> productsSavedToDB =productRepository.saveAll(products);
-		logger.info("Request completed in service to add products " + productDTOs.size());
+		//logger.info("Request completed in service to add products " + productDTOs.size());
 		List<ProductDTO> convertedproductToDTOs=productsSavedToDB.stream()
 				.map(prod->modelMapper.map(prod, ProductDTO.class))
 				.toList();
@@ -47,12 +47,12 @@ public class ProductService {
 	}
 
 	public ProductDTO addProduct(ProductDTO productDTO) {
-		logger.info("Request received in service to add product " + productDTO.getTitle());
+		//logger.info("Request received in service to add product " + productDTO.getTitle());
 		
 		Product product=modelMapper.map(productDTO, Product.class);
 		Product studentProductToDB=productRepository.save(product);
 		
-		logger.info("Request completed in service to add product " + productDTO.getTitle());
+		//logger.info("Request completed in service to add product " + productDTO.getTitle());
 		return modelMapper.map(studentProductToDB, ProductDTO.class);
 	}
 

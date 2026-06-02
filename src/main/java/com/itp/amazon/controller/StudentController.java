@@ -2,8 +2,6 @@ package com.itp.amazon.controller;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.http.HttpStatus;
@@ -35,8 +33,7 @@ public class StudentController {
 	@Autowired
 	StudentService studentService;
 	
-	private static final Logger logger =
-            LoggerFactory.getLogger(StudentService.class);
+	//private static final Logger logger = LoggerFactory.getLogger(StudentService.class);
 	
 	@RequestMapping("/test")
 	public String test()
@@ -182,10 +179,11 @@ public class StudentController {
 	@PostMapping("/saveStudentUsingDTOWithValidation")
 	public ResponseEntity<StudentDTO> saveStudentUsingDTOWithValidation(@Valid @RequestBody  StudentDTO studDTO)
 	{
-		logger.info("Request Received to save Student {}",studDTO.getSname());
+		//logger.info("Request Received to save Student {}",studDTO.getSname());      //Before Aspect
 		StudentDTO stDTO=studentService.saveStudentUsingDTO(studDTO);
-		logger.info("Record saved successfully for Student {}",studDTO.getSname());
-		return new ResponseEntity<StudentDTO>(stDTO,HttpStatus.OK);
+		//logger.info("Record saved successfully for Student {}",studDTO.getSname());	//AfterReturning Aspect only after successful function completion
+		return new ResponseEntity<StudentDTO>(stDTO,HttpStatus.OK);					//After  success fail i will log
+																					//AfterThrows
 	}
 	
 	
@@ -194,7 +192,7 @@ public class StudentController {
 	@GetMapping("/getAllStudents")
 	public List<Student> getAllStudents()			//fixed status code a= 200 fixed status message OK
 	{
-		logger.info("Inside Controller to get all students");
+		//logger.info("Inside Controller to get all students");
 		return studentService.getAllStudents();
 	}
 	

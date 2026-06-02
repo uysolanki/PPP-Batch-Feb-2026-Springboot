@@ -2,9 +2,6 @@ package com.itp.amazon.controller;
 
 import java.util.List;
 
-import org.slf4j.Logger;
-//import org.apache.log4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,13 +26,13 @@ public class ProductController {
 	
 	//private static final Logger logger=Logger.getLogger(ProductController.class);
 	
-	private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
+	//private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
 	
 	@Operation(summary = "Saves Multiple Product", description = "Accepts a List<ProductDTO> and saves them to the database. Returns the saved products ")
 	@PostMapping("/addProducts")
 	public ResponseEntity<List<ProductDTO>> addMultipleProducts(@RequestBody List<ProductDTO> productDTOs)
 	{
-		logger.info("Request received in controller to add product " + productDTOs.size());
+		//logger.info("Request received in controller to add product " + productDTOs.size());
 		return new ResponseEntity<List<ProductDTO>>(productService.addProducts(productDTOs), HttpStatus.CREATED);
 	}
 	
@@ -45,7 +42,7 @@ public class ProductController {
 	@PostMapping("/addProduct")
 	public ResponseEntity<ProductDTO> addProduct(@Valid @RequestBody ProductDTO productDTO)
 	{
-		logger.info("Request received in controller to add product " + productDTO.getTitle());
+		//logger.info("Request received in controller to add product " + productDTO.getTitle());
 		ProductDTO prodDTO=productService.addProduct(productDTO);
 		return new ResponseEntity<ProductDTO>(prodDTO, HttpStatus.CREATED);
 	}
