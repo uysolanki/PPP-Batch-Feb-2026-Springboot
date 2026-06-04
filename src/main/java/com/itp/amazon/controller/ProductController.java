@@ -3,8 +3,10 @@ package com.itp.amazon.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,9 +26,16 @@ public class ProductController {
 	@Autowired
 	ProductService productService;
 	
+	@Value("${info.project.instructor.name}")
+	public String instructorName;
 	//private static final Logger logger=Logger.getLogger(ProductController.class);
 	
 	//private static final Logger logger =LoggerFactory.getLogger(ProductController.class);
+	@GetMapping("/greet")
+	public String greet()
+	{
+		return instructorName;
+	}
 	
 	@Operation(summary = "Saves Multiple Product", description = "Accepts a List<ProductDTO> and saves them to the database. Returns the saved products ")
 	@PostMapping("/addProducts")
