@@ -16,12 +16,12 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
 import com.itp.amazon.controller.ProductController;
-import com.itp.amazon.controller.StudentController;
+import com.itp.amazon.controller.StudentControllerFE;
 import com.itp.amazon.util.ProductCategory;
 
 //@ControllerAdvice
 @RestControllerAdvice(assignableTypes = {
-	    ProductController.class, StudentController.class
+	    ProductController.class, StudentControllerFE.class
 	})
 public class GlobalExceptionHandler {
 
