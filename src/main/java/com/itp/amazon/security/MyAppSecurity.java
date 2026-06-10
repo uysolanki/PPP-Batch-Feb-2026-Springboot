@@ -16,23 +16,35 @@ import org.springframework.security.web.SecurityFilterChain;
 @EnableWebSecurity
 public class MyAppSecurity 
 {
-
+	 //Authentication
 	 @Bean
 	    public UserDetailsService userDetailsService() {
 
-	        UserDetails admin = User.builder()
+	        UserDetails admin1 = User.builder()
 	                .username("jetha")
 	                .password(passwordEncoder().encode("jetha123"))
 	                .authorities("ADMIN")
 	                .build();
+	        
+	        UserDetails admin2 = User.builder()
+	                .username("nitin")
+	                .password(passwordEncoder().encode("nitin123"))
+	                .authorities("ADMIN")
+	                .build();
 
-	        UserDetails user = User.builder()
+	        UserDetails user1 = User.builder()
 	                .username("bagha")
 	                .password(passwordEncoder().encode("bagha123"))
 	                .authorities("USER")
 	                .build();
+	        
+	        UserDetails user2 = User.builder()
+	                .username("magan")
+	                .password(passwordEncoder().encode("magan123"))  //encoding  Bcrypt
+	                .authorities("USER")
+	                .build();
 
-	        return new InMemoryUserDetailsManager(admin, user);
+	        return new InMemoryUserDetailsManager(admin1, admin2,user1,user2);
 	    }
 
 	    @Bean
@@ -40,7 +52,8 @@ public class MyAppSecurity
 	        return new BCryptPasswordEncoder();
 	    }
 	    
-	    @Bean
+	    //Authorisation
+	    @Bean  
 	    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
 	        
 	        http.authorizeRequests()
