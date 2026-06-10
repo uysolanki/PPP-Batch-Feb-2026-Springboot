@@ -1,0 +1,63 @@
+interface FlyingBird {
+    void fly();
+}
+
+interface RunningBird {
+    void fly();
+}
+
+
+class Eagle implements FlyingBird, RunningBird {
+
+    @Override
+    public void fly() {
+        System.out.println("Eagle is flying");
+    }
+}
+
+
+Because both methods are identical, Java treats them as one single method.
+There is no ambiguity.
+
+Java checks only:
+return type ✅
+method name ✅
+parameters  ✅
+
+
+Since both interfaces declare:
+void fly();
+They are considered the same contract.
+So one implementation satisfies both.
+
+
+--------------
+
+interface FlyingBird {
+    default void fly() {
+        System.out.println("FlyingBird fly");
+    }
+}
+
+interface RunningBird {
+    default void fly() {
+        System.out.println("RunningBird fly");
+    }
+}
+
+
+class Eagle implements FlyingBird, RunningBird 
+{
+	@Override
+    public void fly() {
+        FlyingBird.super.fly();   // choose one or write your own logic.
+    }
+}
+
+
+
+--------
+Summary
+Case												Result
+Same abstract method in multiple interfaces			One implementation is enough
+Same default method in multiple interfaces			Must override and resolve conflict

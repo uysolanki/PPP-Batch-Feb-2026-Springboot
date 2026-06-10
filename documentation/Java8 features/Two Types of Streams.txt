@@ -1,0 +1,28 @@
+two types of streams:
+
+1. Object Stream
+Stream<Integer>
+
+Works with objects
+❌ No numeric operations like sum(), average()
+2. Primitive Streams
+IntStream
+LongStream
+DoubleStream
+
+👉 These have:
+
+sum()
+average()
+min()
+max()
+✅ Correct Way
+
+You must convert to IntStream using mapToInt():
+
+double avg = numbers.stream()
+                    .mapToInt(n -> n)
+                    .average()
+                    .orElse(0);
+
+System.out.println(avg);

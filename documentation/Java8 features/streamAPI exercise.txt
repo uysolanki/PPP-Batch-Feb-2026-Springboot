@@ -1,0 +1,98 @@
+Data
+List<Integer> numbers = new ArrayList(Arrays.asList(1,2,3,4,5));
+List<String> months=new ArrayList(Arrays.asList("January","February","March","April","May","June","July","August","September","October","November","December"));
+List<Employee> employeesList=new ArrayList();
+		
+		employeesList.add(new Employee(6, "June",    43,"male",   "IT",     2016, 1900.0));
+		employeesList.add(new Employee(5, "May",     23,"female", "Sales",  2015, 1000.0));
+		employeesList.add(new Employee(12,"November",19,"male",   "IT",     2012, 1300.0));
+		employeesList.add(new Employee(11,"December",46,"female", "Finance",2011, 1400.0));
+		
+		employeesList.add(new Employee(1, "January",  27,"male",   "IT",    2001, 2400.0));
+		employeesList.add(new Employee(10,"October",  32,"female", "Sales", 2010, 1500.0));
+		employeesList.add(new Employee(9, "September",28,"male",   "Sales", 2009, 1600.0));
+		employeesList.add(new Employee(8, "August",   23,"female", "HR",    2008, 1700.0));
+		
+		employeesList.add(new Employee(2, "February", 59,"male",   "IT",    2002, 2300.0));
+		employeesList.add(new Employee(4, "April",    21,"female", "Sales", 2004, 2100.0));
+		employeesList.add(new Employee(3, "March",    33,"male",   "HR",    2003, 2200.0));
+		employeesList.add(new Employee(7, "July",     47,"female", "HR",    2007, 1800.0));
+		
+		
+Map Examples
+1. Convert each number to its square and print  	numbers.stream().map(n->n*n).forEach(n->System.out.println(n));
+2. Convert each number to its square and collect in List  List<Integer> sqrNumbers= numbers.stream().map((num)->num*num).collect(Collectors.toList());
+3. Multiply all numbers by 10 and collect in List	List<Integer> multipleOf10= numbers.stream().map((num)->num*10).collect(Collectors.toList());
+4. display factorial of each number 
+
+numbers.stream().map(n -> {
+		    int fact = 1;
+		    for(int i=1;i<=n;i++) fact *= i;
+		    return fact;
+		}).forEach(n->System.out.println(n));
+		
+		
+	
+	by using method referencing
+	
+	
+	class Demo
+	{
+	public static int factorial(int n)
+	{
+		 	int fact = 1;
+		    for(int i=1;i<=n;i++) 
+		    {
+		    fact *= i;
+		    }
+		    return fact;
+	}
+	}
+	
+	numbers.stream().map(Demo::factorial).forEach(n->System.out.println(n));
+
+5. 4. Convert all month names to uppercase : 		months.stream().map(String::toUpperCase).forEach(System.out::println);
+
+Filter Examples
+1. Print even numbers								numbers.stream().filter(n->n%2==1).forEach(n->System.out.println(n));
+2. Count how many numbers are > 3 : 				long count =numbers.stream().filter(n -> n > 3).count();
+3. Print months starting with 'J' :  			months.stream().filter(m -> m.startsWith("J")).forEach(System.out::println);
+4. Print months whose name length > 5 			months.stream().filter(m -> m.length() > 5).forEach(System.out::println);
+5. Count months ending with 'y' : long count = 	months.stream().filter(m -> m.endsWith("y")).count();
+
+
+Reduce Examples
+1. Find the sum of all numbers			int sum=	numbers.stream().reduce(0,(acc,num) -> acc + num);  
+2. find Max Number 						int max = 	numbers.stream().reduce(Integer::max).orElse(0); 
+3. Sum of Squares 						int sum = 	numbers.stream().map(n -> n * n).reduce(0,(acc,num) -> acc + num);
+4. Concatenate all months				String combined = months.stream().reduce("", (a, b) -> a + b);
+5. Concatenate with spaces				String combined = months.stream().reduce("", (a, b) -> a  + " " + b);
+
+
+
+List of Objects :
+1. store the names of all employees in a list
+List<String> employees1=employees.stream().map(employee->employee.getName()).collect(Collectors.toList());
+
+2. display the names of all employees
+employees.stream().map(employee->employee.getName()).forEach(name->System.out.println(name));
+employees.stream().map(employee->employee.getName()).forEach(System.out::println);
+
+3. store the names of all employees working in IT dept in a list
+List<String> employees2=employees
+				.stream()
+				.filter(employee->"IT".equalsIgnoreCase(employee.getDepartment()))
+				.map(emp->emp.getName())
+				.collect(Collectors.toList());
+4. display the names of all employees working in IT dept
+				employees
+				.stream()
+				.filter(employee->"IT".equalsIgnoreCase(employee.getDepartment()))
+				.map(emp->emp.getName())
+				.forEach(System.out::println);
+5. Total Salary of all employees working in IT dept		
+				double sum=employees
+				.stream()
+				.filter(employee->"IT".equalsIgnoreCase(employee.getDepartment()))
+				.mapToDouble(Employee::getSalary)
+				.sum();

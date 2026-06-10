@@ -1,0 +1,110 @@
+Terminal Operations Examples
+🔹 1. allMatch
+
+👉 Check if all elements match a condition
+
+boolean result = numbers.stream().allMatch(n -> n > 0);
+System.out.println(result); // true
+
+🔹 2. anyMatch
+
+👉 Check if any element matches
+
+boolean result = numbers.stream().anyMatch(n -> n > 3);
+System.out.println(result); // true
+
+🔹 3. noneMatch
+
+👉 Check if no element matches
+
+boolean result = numbers.stream().noneMatch(n -> n < 0);
+System.out.println(result); // true
+
+🔹 4. max
+
+👉 Find maximum value
+
+Optional<Integer> max = numbers.stream().max(Integer::compareTo);
+System.out.println(max.get()); // 5
+
+🔹 5. min
+
+👉 Find minimum value
+
+Optional<Integer> min = numbers.stream().min(Integer::compareTo);
+System.out.println(min.get()); // 1
+
+🔹 6. findAny
+
+👉 Returns any element (useful in parallel streams)
+
+Optional<Integer> any = numbers.stream().findAny();
+System.out.println(any.get()); // could be any element
+
+🔹 7. findFirst
+
+👉 Returns first element
+
+Optional<Integer> first = numbers.stream().findFirst();
+System.out.println(first.get()); // 1
+
+🔹 8. count
+
+👉 Count elements
+
+long count = numbers.stream().count();
+System.out.println(count); // 5
+
+🔹 9. forEach
+
+👉 Iterate over elements
+
+numbers.stream().forEach(n -> System.out.print(n + " "));
+// Output: 1 2 3 4 5
+
+🔹 10. collect
+
+👉 Convert stream to collection
+
+List<Integer> evenList = numbers.stream()
+                                .filter(n -> n % 2 == 0)
+                                .collect(Collectors.toList());
+System.out.println(evenList); // [2, 4]
+
+🔹 11. toList (Java 16+)
+
+👉 Directly convert to List
+
+List<Integer> evenList = numbers.stream()
+                                .filter(n -> n % 2 == 0)
+                                .toList();
+System.out.println(evenList); // [2, 4]
+
+
+
+
+best practice
+
+Important (Avoid .get() blindly)
+
+If no element matches → ❌ NoSuchElementException
+
+✅ Safe ways:
+System.out.println(first.orElse(null)); // returns null if not found
+
+
+or
+
+first.ifPresent(System.out::println);
+
+
+or
+
+Integer value = first.orElseThrow(() -> new RuntimeException("Not found"));
+
+🔥 Pro Tip (Interview)
+
+👉 Difference between:
+
+findFirst() → respects order
+findAny() → faster in parallel streams (no order guarantee)

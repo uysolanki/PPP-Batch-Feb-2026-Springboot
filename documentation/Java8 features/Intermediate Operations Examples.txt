@@ -1,0 +1,70 @@
+Intermediate Operations Examples
+🔹 1. filter()
+
+👉 Keeps elements based on condition
+
+numbers.stream().filter(n -> n % 2 == 0).forEach(System.out::println);
+
+
+✔ Output: 2, 4
+
+🔹 2. map()
+
+👉 Transforms elements
+
+numbers.stream().map(n -> n * 2).forEach(System.out::println);
+
+
+✔ Output: 2, 4, 6, 8, 10
+
+🔹 3. sorted()
+
+👉 Sorts elements
+
+numbers.stream().sorted((a, b) -> b - a).forEach(System.out::println);
+
+
+✔ Output: 5, 4, 3, 2, 1
+
+🔹 4. distinct()
+
+👉 Removes duplicates
+
+Arrays.asList(1,2,2,3,3,4).stream().distinct().forEach(System.out::println);
+
+
+✔ Output: 1, 2, 3, 4
+
+🔹 5. limit()
+
+👉 Limits number of elements
+
+numbers.stream().limit(3).forEach(System.out::println);
+
+
+✔ Output: 1, 2, 3
+
+🔹 6. skip()
+
+👉 Skips first N elements
+
+numbers.stream().skip(2).forEach(System.out::println);
+
+
+✔ Output: 3, 4, 5
+
+🔹 7. peek()
+
+👉 Debug / inspect elements
+
+numbers.stream().peek(n -> System.out.println("Processing: " + n)).toList();
+
+🔹 8. flatMap()
+
+👉 Flattens nested structures
+
+List<List<Integer>> list = Arrays.asList(Arrays.asList(1,2), Arrays.asList(3,4));
+list.stream().flatMap(l -> l.stream()).forEach(System.out::println);
+
+
+✔ Output: 1, 2, 3, 4

@@ -1,0 +1,120 @@
+Optional class
+
+Optional is a container (box) that may contain a value or may be empty.
+
+
+Optional Box
+-------------
+|  Java     |   ← value present
+-------------
+
+Optional Box
+-------------
+|  empty    |   ← no value
+-------------
+
+
+String name = null;
+
+if(name != null)
+    System.out.println(name);
+else
+    System.out.println("User Not Found");
+	
+	
+Java 8 introduced Optional to handle this cleanly.
+
+
+public class OptionalDemo {
+
+	public static void main(String[] args) 
+	{
+		OptionalDemo service = new OptionalDemo();
+
+	        Optional<String> name = service.getUserName(1);
+
+	        System.out.println(name.orElse("User Not Found"));
+	}
+	
+	public Optional<String> getUserName(int id) {
+
+        if(id == 1)
+            return Optional.of("Rahul");
+        else
+            return Optional.empty();
+    }
+}
+
+------------------
+
+package optionaldemo;
+
+import java.util.Optional;
+
+public class OptionalDemoAll {
+
+	public static void main(String[] args) 
+	{
+		OptionalDemo service = new OptionalDemo();
+
+		Optional<String> name = service.getUserName(1);
+
+		// 1. isPresent() -> Checks whether the Optional contains a value
+		// Returns true if value exists, otherwise false
+		if(name.isPresent()) 
+		{
+		    System.out.println("isPresent(): " + name.get());
+		}
+
+		// 2. ifPresent() -> Executes the lambda expression only if a value exists
+		// If Optional is empty, the lambda will not run
+		name.ifPresent(n -> System.out.println("ifPresent(): " + n));
+
+		// 3. orElse() -> Returns the value if present, otherwise returns the default value
+		// The default value is always created
+		System.out.println("orElse(): " + name.orElse("User Not Found"));
+
+		// 4. orElseGet() -> Returns the value if present, otherwise calls a Supplier
+		// (lambda/function) to generate the default value only when Optional is empty
+		System.out.println("orElseGet(): " + name.orElseGet(() -> "Generated Default User"));
+
+		// 5. map() -> Transforms the value inside Optional if it exists
+		// Here it converts the name to uppercase
+		Optional<String> upper = name.map(String::toUpperCase);
+		System.out.println("map(): " + upper.get());
+
+		// 6. orElseThrow() -> Returns value if present, otherwise throws an exception
+		System.out.println("orElseThrow(): " + name.orElseThrow(() ->
+		        new RuntimeException("User not found")));
+
+		// 7. get() -> Retrieves the value inside Optional
+		// Should be used carefully because it throws NoSuchElementException if empty
+		System.out.println("get(): " + name.get());
+
+		// 8. of() -> Creates Optional with a non-null value
+		// Use when you are 100% sure the value is NOT null
+		// If the value is null, it throws NullPointerException
+		Optional<String> op1 = Optional.of("Java");
+		System.out.println("of(): " + op1.get());
+
+		// 9. ofNullable() -> Creates Optional that may contain a null value
+		// If value is null, it returns Optional.empty() instead of throwing exception
+		Optional<String> op2 = Optional.ofNullable(null);
+		System.out.println("ofNullable(): " + op2);
+
+		// 10. empty() -> Creates an empty Optional manually
+		// Used when you want to explicitly return no value
+		Optional<String> op3 = Optional.empty();
+		System.out.println("empty(): " + op3);
+        
+	}
+	
+	public Optional<String> getUserName(int id) {
+
+        if(id == 1)
+            return Optional.of("Rahul");
+        else
+            return Optional.empty();
+    }
+
+}
