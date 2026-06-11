@@ -12819,3 +12819,719 @@ Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "us
                 INFO 
                 c.i.a.ItpPp1SpringbootApplication
                 - Started ItpPp1SpringbootApplication in 30.611 seconds (process running for 33.936)
+2026-06-11 11:06:26
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-11 11:06:26
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 14712 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-11 11:06:26
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-11 11:06:26
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-11 11:06:26
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-11 11:06:26
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-11 11:06:31
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-11 11:06:31
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 482 ms. Found 3 JPA repository interfaces.
+2026-06-11 11:06:36
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-11 11:06:36
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-11 11:06:36
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-11 11:06:36
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-11 11:06:36
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-11 11:06:36
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 10510 ms
+2026-06-11 11:06:40
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-11 11:06:41
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-11 11:06:42
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-11 11:06:45
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-11 11:06:45
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-11 11:06:46
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@3e403073
+2026-06-11 11:06:46
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-11 11:06:46
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-11 11:06:51
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-11 11:06:51
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-11 11:06:57
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-11 11:06:57
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-11 11:06:57
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-11 11:07:00
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-11 11:07:04
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-11 11:07:05
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-11 11:07:05
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-11 11:07:05
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 41.018 seconds (process running for 42.85)
+2026-06-11 11:13:04
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-11 11:13:04
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-11 11:13:04
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 3 ms
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:13:15
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:13:21
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentForm
+2026-06-11 11:13:21
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:13:21
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentForm
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentFE
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=test, dname=test, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudent
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=test, dname=test, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudent
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentFE
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:13:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:13:40
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-11 11:13:40
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, {}]
+2026-06-11 11:13:40
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getStudent
+2026-06-11 11:13:40
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1]
+2026-06-11 11:13:41
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getStudent
+2026-06-11 11:13:41
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentFE
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, Student(rno=1, sname=test123, dname=test, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudent
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, Student(rno=1, sname=test123, dname=test, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudent
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentFE
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:13:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:13:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentForm
+2026-06-11 11:13:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:13:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentForm
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentFE
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=new test, dname=new dept, per=98.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudent
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=new test, dname=new dept, per=98.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudent
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentFE
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:14:01
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, {}]
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getStudent
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2]
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getStudent
+2026-06-11 11:14:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentFE
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, Student(rno=2, sname=new test, dname=BCOM, per=98.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudent
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, Student(rno=2, sname=new test, dname=BCOM, per=98.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudent
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentFE
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:14:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:14:51
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:14:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentForm
+2026-06-11 11:14:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:14:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentForm
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentFE
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=abc, dname=BCA, per=87.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudent
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=abc, dname=BCA, per=87.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudent
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentFE
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:15:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:15:08
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:15:08
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@2fd18d32, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[USER]]]
+2026-06-11 11:15:08
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:15:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:15:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:15:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@2fd18d32, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[USER]]]
+2026-06-11 11:15:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:19:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:19:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:19:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@4caee02f, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[]]]
+2026-06-11 11:19:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-11 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@4caee02f, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[]]]
+2026-06-11 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-11 11:19:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:19:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@4caee02f, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[]]]
+2026-06-11 11:19:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:21:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:21:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentForm
+2026-06-11 11:21:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:21:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentForm
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentFE
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=Alice, dname=BE, per=87.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudent
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=Alice, dname=BE, per=87.0, createdAt=null, modifiedAt=null)]
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudent
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentFE
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-11 11:21:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-11 11:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-11 11:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@7e35d636, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=EED42A8D2F531710BAC34D5DCB53D362], Granted Authorities=[USER]]]
+2026-06-11 11:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
