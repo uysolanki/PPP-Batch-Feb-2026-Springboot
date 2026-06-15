@@ -23,7 +23,7 @@ public class MyAppSecurityNew
 	    //Authentication Authorisation
 	    @Bean  
 	    public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
-	        http.authenticationProvider(myAuthenticationProvider());
+	        http.authenticationProvider(myAuthenticationProvider()); //single point of contact for authentication
 	    	
 	        http.authorizeRequests()		//Authorisation
 	        .requestMatchers("/getAllStudentsFE","/saveStudentForm").hasAnyAuthority("USER","ADMIN")
@@ -42,9 +42,9 @@ public class MyAppSecurityNew
 
 	    @Bean
 		public AuthenticationProvider myAuthenticationProvider() {
-			DaoAuthenticationProvider dao=new DaoAuthenticationProvider();
-			dao.setUserDetailsService(mySetUserDetailsService());
-			dao.setPasswordEncoder(mySetPasswordEncoder());
+			DaoAuthenticationProvider dao=new DaoAuthenticationProvider(); //Dao used for DB authentication
+			dao.setUserDetailsService(mySetUserDetailsService());		//1. userdetails
+			dao.setPasswordEncoder(mySetPasswordEncoder());				//2. password
 			return dao;
 		}
 

@@ -8,5 +8,5 @@ import com.itp.amazon.entity.DBUser;
 @Repository
 public interface DBUserRepository extends JpaRepository<DBUser, Integer>
 {
-			public DBUser findByUsername(String s);
+			public DBUser findByUsername(String s);   //JPA FindBy methods
 }

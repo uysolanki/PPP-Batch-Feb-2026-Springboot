@@ -1,5 +1,6 @@
 package com.itp.amazon.entity;
 
+import java.time.LocalDate;
 import java.util.List;
 
 import jakarta.persistence.CascadeType;
@@ -40,5 +41,13 @@ public class DBUser {
 			inverseJoinColumns = @JoinColumn(name="fkroleid")
 			)
 	List<Role> roles;
+	
+	LocalDate accountExpiryDate;
+	
+	int accountLockedStatus; 	  //1 - Account non locked 	0 - Account locked
+	
+	LocalDate credExpiryDate;
+	
+	int accountEnabledStatus;	 //1 - Account Enabled 	0 - Account Disabled
 	
 }

@@ -21,9 +21,9 @@
 //	    public UserDetailsService userDetailsService() {
 //
 //	        UserDetails admin1 = User.builder()
-//	                .username("jetha")
-//	                .password(passwordEncoder().encode("jetha123"))
-//	                .authorities("ADMIN")
+//	                .username("jetha")		//1. userdetails
+//	                .password(passwordEncoder().encode("jetha123")) //2. password
+//	                .authorities("ADMIN")   //3. authority
 //	                .build();
 //	        
 //	        UserDetails admin2 = User.builder()

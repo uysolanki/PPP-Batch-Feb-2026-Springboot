@@ -13535,3 +13535,1231 @@ Caused by: org.postgresql.util.PSQLException: ERROR: syntax error at or near "us
                 INFO 
                 com.itp.amazon.aspect.LoggingAspect
                 - Method Completed accesssDenied
+2026-06-15 09:47:47
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 09:47:48
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 13508 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 09:47:48
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 09:47:48
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 09:47:48
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 09:47:48
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 09:47:54
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 09:47:54
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 174 ms. Found 3 JPA repository interfaces.
+2026-06-15 09:47:58
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 09:47:58
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:47:58
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 09:47:58
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 09:47:59
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 09:47:59
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 10742 ms
+2026-06-15 09:48:00
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 09:48:00
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 09:48:00
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 09:48:01
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 09:48:01
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 09:48:02
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@20b66b44
+2026-06-15 09:48:02
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 09:48:02
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 09:48:07
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 09:48:08
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 09:48:12
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 09:48:12
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 09:48:12
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 09:48:15
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 09:48:18
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 09:48:18
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:48:18
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 09:48:18
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 31.796 seconds (process running for 33.492)
+2026-06-15 09:48:38
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15 09:48:38
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-15 09:48:38
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 5 ms
+2026-06-15 09:55:30
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 09:55:30
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 14632 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 09:55:30
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 09:55:30
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 09:55:30
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 09:55:30
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 09:55:36
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 09:55:36
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 452 ms. Found 3 JPA repository interfaces.
+2026-06-15 09:55:44
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 09:55:44
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:55:44
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 09:55:44
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 09:55:44
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 09:55:44
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 13726 ms
+2026-06-15 09:55:48
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 09:55:48
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 09:55:48
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 09:55:50
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 09:55:50
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 09:55:50
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@4475df70
+2026-06-15 09:55:50
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 09:55:51
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 09:55:54
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 09:55:54
+                WARN 
+                o.h.t.s.i.ExceptionHandlerLoggedImpl
+                - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists dbuser 
+       add column account_enabled_status integer not null" via JDBC [ERROR: column "account_enabled_status" of relation "dbuser" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists dbuser 
+       add column account_enabled_status integer not null" via JDBC [ERROR: column "account_enabled_status" of relation "dbuser" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:583)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:523)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:341)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1420)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.itp.amazon.ItpPp1SpringbootApplication.main(ItpPp1SpringbootApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "account_enabled_status" of relation "dbuser" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 42 common frames omitted
+2026-06-15 09:55:54
+                WARN 
+                o.h.t.s.i.ExceptionHandlerLoggedImpl
+                - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists dbuser 
+       add column account_locked_status integer not null" via JDBC [ERROR: column "account_locked_status" of relation "dbuser" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists dbuser 
+       add column account_locked_status integer not null" via JDBC [ERROR: column "account_locked_status" of relation "dbuser" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:583)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:523)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:341)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1420)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.itp.amazon.ItpPp1SpringbootApplication.main(ItpPp1SpringbootApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "account_locked_status" of relation "dbuser" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 42 common frames omitted
+2026-06-15 09:55:55
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 09:55:58
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 09:55:59
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 09:55:59
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 09:56:02
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 09:56:10
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 09:56:10
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:56:10
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 09:56:11
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 41.867 seconds (process running for 43.723)
+2026-06-15 09:57:40
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 09:57:41
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 18960 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 09:57:41
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 09:57:41
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 09:57:41
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 09:57:41
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 09:57:45
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 09:57:45
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 160 ms. Found 3 JPA repository interfaces.
+2026-06-15 09:57:48
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 09:57:49
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:57:49
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 09:57:49
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 09:57:49
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 09:57:49
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 8278 ms
+2026-06-15 09:57:52
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 09:57:52
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 09:57:53
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 09:57:54
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 09:57:54
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 09:57:54
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@dd7644e
+2026-06-15 09:57:54
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 09:57:54
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 09:57:57
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 09:57:57
+                WARN 
+                o.h.t.s.i.ExceptionHandlerLoggedImpl
+                - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists dbuser 
+       add column account_enabled_status integer not null" via JDBC [ERROR: column "account_enabled_status" of relation "dbuser" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists dbuser 
+       add column account_enabled_status integer not null" via JDBC [ERROR: column "account_enabled_status" of relation "dbuser" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:583)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:523)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:341)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1420)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.itp.amazon.ItpPp1SpringbootApplication.main(ItpPp1SpringbootApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "account_enabled_status" of relation "dbuser" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 42 common frames omitted
+2026-06-15 09:57:57
+                WARN 
+                o.h.t.s.i.ExceptionHandlerLoggedImpl
+                - GenerationTarget encountered exception accepting command : Error executing DDL "
+    alter table if exists dbuser 
+       add column account_locked_status integer not null" via JDBC [ERROR: column "account_locked_status" of relation "dbuser" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "
+    alter table if exists dbuser 
+       add column account_locked_status integer not null" via JDBC [ERROR: column "account_locked_status" of relation "dbuser" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:583)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:523)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:341)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:240)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:119)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1420)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:322)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:457)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:75)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:205)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:954)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352)
+	at com.itp.amazon.ItpPp1SpringbootApplication.main(ItpPp1SpringbootApplication.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "account_locked_status" of relation "dbuser" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 42 common frames omitted
+2026-06-15 09:57:58
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 09:58:04
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 09:58:05
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 09:58:05
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 09:58:07
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 09:58:09
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 09:58:10
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 09:58:10
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 09:58:10
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 30.22 seconds (process running for 31.908)
+2026-06-15 10:00:05
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 10:00:06
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 5696 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 10:00:06
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 10:00:06
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 10:00:06
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 10:00:06
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 10:00:12
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 10:00:12
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 489 ms. Found 3 JPA repository interfaces.
+2026-06-15 10:00:18
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 10:00:18
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:00:18
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 10:00:18
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 10:00:18
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 10:00:18
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 12073 ms
+2026-06-15 10:00:19
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 10:00:20
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 10:00:20
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 10:00:21
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 10:00:21
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 10:00:21
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@63cb6356
+2026-06-15 10:00:21
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 10:00:21
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 10:00:24
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 10:00:25
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 10:00:32
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 10:00:32
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 10:00:32
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 10:00:34
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 10:00:37
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 10:00:38
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:00:38
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 10:00:38
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 33.935 seconds (process running for 35.919)
+2026-06-15 10:17:08
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 10:17:08
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 17412 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 10:17:08
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 10:17:08
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 10:17:08
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 10:17:08
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 10:17:14
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 10:17:14
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 119 ms. Found 3 JPA repository interfaces.
+2026-06-15 10:17:17
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 10:17:17
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:17:17
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 10:17:17
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 10:17:18
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 10:17:18
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 9515 ms
+2026-06-15 10:17:19
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 10:17:19
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 10:17:19
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 10:17:20
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 10:17:20
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 10:17:21
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@6a5ee996
+2026-06-15 10:17:21
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 10:17:21
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 10:17:26
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 10:17:26
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 10:17:29
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 10:17:29
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 10:17:29
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 10:17:31
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 10:17:33
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 10:17:34
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:17:34
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 10:17:34
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 26.926 seconds (process running for 28.329)
+2026-06-15 10:17:39
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15 10:17:39
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-15 10:17:39
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 10 ms
+2026-06-15 10:17:48
+                WARN 
+                o.a.c.util.SessionIdGeneratorBase
+                - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [188] milliseconds.
+2026-06-15 10:19:22
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-15 10:19:22
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 1660 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-15 10:19:22
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-15 10:19:22
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-15 10:19:23
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-15 10:19:23
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-15 10:19:27
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-15 10:19:27
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 241 ms. Found 3 JPA repository interfaces.
+2026-06-15 10:19:31
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-15 10:19:31
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:19:31
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-15 10:19:31
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-15 10:19:31
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-15 10:19:31
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 8618 ms
+2026-06-15 10:19:35
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-15 10:19:35
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-15 10:19:35
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-15 10:19:36
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-15 10:19:36
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-15 10:19:36
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@70257fa4
+2026-06-15 10:19:36
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-15 10:19:37
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-15 10:19:40
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-15 10:19:40
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-15 10:19:44
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-15 10:19:44
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-15 10:19:44
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-15 10:19:46
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-15 10:19:49
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-15 10:19:49
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-15 10:19:49
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-15 10:19:49
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 27.984 seconds (process running for 29.528)
+2026-06-15 10:20:35
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-15 10:20:35
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-15 10:20:35
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 4 ms
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-15 10:20:45
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-15 10:21:26
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-15 10:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentForm
+2026-06-15 10:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-15 10:21:37
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentForm
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudentFE
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=Alice, dname=BCA, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveStudent
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [Student(rno=null, sname=Alice, dname=BCA, per=90.0, createdAt=null, modifiedAt=null)]
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudent
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveStudentFE
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-15 10:21:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-15 10:21:58
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-15 10:21:58
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@257628ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=FDBE31E31F872190211AD558E07C2242], Granted Authorities=[USER]]]
+2026-06-15 10:21:58
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-15 10:22:06
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-15 10:22:06
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@257628ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=FDBE31E31F872190211AD558E07C2242], Granted Authorities=[USER]]]
+2026-06-15 10:22:06
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-15 10:22:27
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
