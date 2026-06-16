@@ -26,7 +26,7 @@ public class MyAppSecurityNew
 	        http.authenticationProvider(myAuthenticationProvider()); //single point of contact for authentication
 	    	
 	        http.authorizeRequests()		//Authorisation
-	        .requestMatchers("/getAllStudentsFE","/saveStudentForm").hasAnyAuthority("USER","ADMIN")
+	        .requestMatchers("/getAllStudentsFE","/saveStudentForm","/saveUserForm").hasAnyAuthority("USER","ADMIN")
 	        .requestMatchers("/deleteStudentFE/**","/updateStudentForm/**").hasAuthority("ADMIN")
 	        .anyRequest().authenticated()
 	        .and()
