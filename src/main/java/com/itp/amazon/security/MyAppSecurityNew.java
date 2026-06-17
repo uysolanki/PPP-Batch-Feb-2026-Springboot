@@ -26,11 +26,11 @@ public class MyAppSecurityNew
 	        http.authenticationProvider(myAuthenticationProvider()); //single point of contact for authentication
 	    	
 	        http.authorizeRequests()		//Authorisation
-	        .requestMatchers("/getAllStudentsFE","/saveStudentForm","/saveUserForm").hasAnyAuthority("USER","ADMIN")
-	        .requestMatchers("/deleteStudentFE/**","/updateStudentForm/**").hasAuthority("ADMIN")
+	        .requestMatchers("/getAllStudentsFE","/saveStudentForm","/saveUserForm","/showAllUsers").hasAnyAuthority("USER","ADMIN")
+	        .requestMatchers("/deleteStudentFE/**","/updateStudentForm/**","/deleteUserFE/**","/updateUserForm/**").hasAuthority("ADMIN")
 	        .anyRequest().authenticated()
 	        .and()
-	        .formLogin().loginProcessingUrl("/login").successForwardUrl("/getAllStudentsFE").permitAll()
+	        .formLogin().loginProcessingUrl("/login").successForwardUrl("/home").permitAll()
 	        .and()
 	        .logout().logoutSuccessUrl("/login").permitAll()
 	        .and()

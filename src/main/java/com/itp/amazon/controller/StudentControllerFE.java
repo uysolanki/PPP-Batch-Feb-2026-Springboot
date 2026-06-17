@@ -26,7 +26,7 @@ public class StudentControllerFE {
 	@RequestMapping("/home")
 	public String homepage()
 	{
-		return "home";
+		return "landingpage";
 	}
 	
 	@RequestMapping("/getAllStudentsFE")
