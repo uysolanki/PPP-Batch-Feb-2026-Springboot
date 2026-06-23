@@ -1,6 +1,8 @@
 name: Spring Boot Build
 
 on:
+  workflow_dispatch:
+  
   push:
     branches:
       - main
