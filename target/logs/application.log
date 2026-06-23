@@ -1,0 +1,176 @@
+2026-06-23 11:29:54
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-23 11:29:54
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication v0.0.1-SNAPSHOT using Java 23.0.2 with PID 11508 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\ITP_PP1_Springboot-0.0.1-SNAPSHOT.jar started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot\target)
+2026-06-23 11:29:54
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-23 11:29:54
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-23 11:29:57
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-23 11:29:57
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 109 ms. Found 4 JPA repository interfaces.
+2026-06-23 11:29:59
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-23 11:29:59
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-23 11:29:59
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-23 11:29:59
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-23 11:30:00
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-23 11:30:00
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 4907 ms
+2026-06-23 11:30:00
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-23 11:30:00
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-23 11:30:00
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-23 11:30:01
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-23 11:30:01
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-23 11:30:01
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@433b546f
+2026-06-23 11:30:01
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-23 11:30:01
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-23 11:30:03
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-23 11:30:03
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-23 11:30:05
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-23 11:30:05
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-23 11:30:05
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-23 11:30:06
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-23 11:30:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started passwordEncoder
+2026-06-23 11:30:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-23 11:30:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed passwordEncoder
+2026-06-23 11:30:08
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-23 11:30:08
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-23 11:30:08
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 14.535 seconds (process running for 15.614)
+2026-06-23 11:30:23
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-23 11:30:23
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-23 11:30:23
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 2 ms
+2026-06-23 11:30:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-23 11:30:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-23 11:30:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-23 11:30:43
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
