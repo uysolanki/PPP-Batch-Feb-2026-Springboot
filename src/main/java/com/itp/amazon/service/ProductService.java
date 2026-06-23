@@ -56,4 +56,10 @@ public class ProductService {
 		return modelMapper.map(studentProductToDB, ProductDTO.class);
 	}
 
+	public ProductDTO saveProductUsingDTO(ProductDTO productDTO) {
+		Product product=modelMapper.map(productDTO, Product.class);
+		Product productSavedToDB=productRepository.save(product);
+		return modelMapper.map(productSavedToDB, ProductDTO.class);
+	}
+
 }

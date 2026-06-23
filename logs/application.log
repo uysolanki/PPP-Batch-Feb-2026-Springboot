@@ -19838,3 +19838,1183 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
                 INFO 
                 com.itp.amazon.aspect.LoggingAspect
                 - Method Completed updateStudentForm
+2026-06-17 11:19:04
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-17 11:19:04
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 15404 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-17 11:19:04
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-17 11:19:04
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-17 11:19:04
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-17 11:19:04
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-17 11:19:10
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-17 11:19:11
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 203 ms. Found 4 JPA repository interfaces.
+2026-06-17 11:19:14
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-17 11:19:14
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-17 11:19:14
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-17 11:19:14
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-17 11:19:14
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-17 11:19:14
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 9900 ms
+2026-06-17 11:19:16
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-17 11:19:16
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-17 11:19:16
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-17 11:19:17
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-17 11:19:17
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-17 11:19:19
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@911284
+2026-06-17 11:19:19
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-17 11:19:19
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-17 11:19:23
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-17 11:19:23
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-17 11:19:26
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-17 11:19:27
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-17 11:19:27
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-17 11:19:29
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-17 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started passwordEncoder
+2026-06-17 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:19:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed passwordEncoder
+2026-06-17 11:19:33
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-17 11:19:34
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-17 11:19:34
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-17 11:19:34
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 31.094 seconds (process running for 32.54)
+2026-06-17 11:19:43
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-17 11:19:43
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-17 11:19:43
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 3 ms
+2026-06-17 11:19:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:19:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:19:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:19:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, {}]
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6]
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:20:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, DBUser(userid=6, username=david, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-16, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, DBUser(userid=6, username=david, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-16, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:20:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:20:11
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:20:11
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:20:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:20:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:20:32
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:20:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, {}]
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6]
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:20:39
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, DBUser(userid=6, username=david, password=da123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-16, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [6, DBUser(userid=6, username=david, password=da123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-16, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:20:46
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:21:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:21:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:21:07
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:21:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:21:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:21:56
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:21:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, {}]
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1]
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:22:03
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=null, accountLockedStatus=1, credExpiryDate=null, accountEnabledStatus=1)]
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=null, accountLockedStatus=1, credExpiryDate=null, accountEnabledStatus=1)]
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:22:10
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, {}]
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1]
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:22:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:22:53
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:23:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:23:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:23:23
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:23:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, {}]
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1]
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:23:29
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:23:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:23:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=jetha123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:23:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:23:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [1, DBUser(userid=1, username=jetha, password=jetha123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:23:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:23:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-17 11:23:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:23:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:24:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [3, {}]
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [3]
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:24:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [3, DBUser(userid=3, username=vedant@itp.com, password=vedant123, roles=[Role(roleid=2, rolename=USER), Role(roleid=3, rolename=CEO)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [3, DBUser(userid=3, username=vedant@itp.com, password=vedant123, roles=[Role(roleid=2, rolename=USER), Role(roleid=3, rolename=CEO)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:24:49
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [4, {}]
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [4]
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:24:57
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:25:18
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:25:18
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [4, DBUser(userid=4, username=ronaldo, password=ronaldo123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:25:18
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:25:18
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [4, DBUser(userid=4, username=ronaldo, password=ronaldo123, roles=[Role(roleid=1, rolename=ADMIN), Role(roleid=2, rolename=USER)], accountExpiryDate=2027-06-17, accountLockedStatus=1, credExpiryDate=2026-10-17, accountEnabledStatus=1)]
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:25:19
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateStudentForm
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, {}]
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getUser
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2]
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getUser
+2026-06-17 11:25:24
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateStudentForm
+2026-06-17 11:25:34
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUserFE
+2026-06-17 11:25:34
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, DBUser(userid=2, username=bagha, password=bagha123, roles=[Role(roleid=2, rolename=USER)], accountExpiryDate=2026-12-31, accountLockedStatus=1, credExpiryDate=2026-06-14, accountEnabledStatus=1)]
+2026-06-17 11:25:34
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started updateUser
+2026-06-17 11:25:34
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [2, DBUser(userid=2, username=bagha, password=bagha123, roles=[Role(roleid=2, rolename=USER)], accountExpiryDate=2026-12-31, accountLockedStatus=1, credExpiryDate=2026-06-14, accountEnabledStatus=1)]
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUser
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed updateUserFE
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-17 11:25:35
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-20 19:49:35
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-20 19:49:35
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Starting ProductControllerTest using Java 17 with PID 12376 (started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-20 19:49:35
+                DEBUG
+                c.i.a.c.ProductControllerTest
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-20 19:49:35
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - The following 1 profile is active: "dev"
+2026-06-20 19:49:39
+                INFO 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-20 19:49:40
+                INFO 
+                o.s.b.t.m.w.SpringBootMockServletContext
+                - Initializing Spring TestDispatcherServlet ''
+2026-06-20 19:49:40
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Initializing Servlet ''
+2026-06-20 19:49:40
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Completed initialization in 2 ms
+2026-06-20 19:49:40
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Started ProductControllerTest in 5.997 seconds (process running for 8.705)
+2026-06-20 19:51:17
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-20 19:51:17
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Starting ProductControllerTest using Java 17 with PID 18852 (started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-20 19:51:17
+                DEBUG
+                c.i.a.c.ProductControllerTest
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-20 19:51:17
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - The following 1 profile is active: "dev"
+2026-06-20 19:51:21
+                INFO 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-20 19:51:21
+                INFO 
+                o.s.b.t.m.w.SpringBootMockServletContext
+                - Initializing Spring TestDispatcherServlet ''
+2026-06-20 19:51:21
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Initializing Servlet ''
+2026-06-20 19:51:21
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Completed initialization in 2 ms
+2026-06-20 19:51:21
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Started ProductControllerTest in 4.878 seconds (process running for 6.48)
+2026-06-22 11:14:47
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-22 11:14:47
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Starting ProductControllerTest using Java 17 with PID 17612 (started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-22 11:14:47
+                DEBUG
+                c.i.a.c.ProductControllerTest
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-22 11:14:47
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - The following 1 profile is active: "dev"
+2026-06-22 11:14:55
+                INFO 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-22 11:14:55
+                INFO 
+                o.s.b.t.m.w.SpringBootMockServletContext
+                - Initializing Spring TestDispatcherServlet ''
+2026-06-22 11:14:55
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Initializing Servlet ''
+2026-06-22 11:14:55
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Completed initialization in 5 ms
+2026-06-22 11:14:55
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Started ProductControllerTest in 9.567 seconds (process running for 12.615)
+2026-06-23 11:25:47
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-23 11:25:47
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Starting ProductControllerTest using Java 17 with PID 18628 (started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-23 11:25:47
+                DEBUG
+                c.i.a.c.ProductControllerTest
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-23 11:25:47
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - The following 1 profile is active: "dev"
+2026-06-23 11:25:53
+                INFO 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-06-23 11:25:53
+                INFO 
+                o.s.b.t.m.w.SpringBootMockServletContext
+                - Initializing Spring TestDispatcherServlet ''
+2026-06-23 11:25:53
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Initializing Servlet ''
+2026-06-23 11:25:53
+                INFO 
+                o.s.t.w.s.TestDispatcherServlet
+                - Completed initialization in 1 ms
+2026-06-23 11:25:53
+                INFO 
+                c.i.a.c.ProductControllerTest
+                - Started ProductControllerTest in 7.33 seconds (process running for 9.193)
+2026-06-23 11:25:55
+                INFO 
+                o.s.t.c.s.AnnotationConfigContextLoaderUtils
+                - Could not detect default configuration classes for test class [com.itp.amazon.ItpPp1SpringbootApplicationTests]: ItpPp1SpringbootApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2026-06-23 11:25:55
+                INFO 
+                o.s.b.t.c.SpringBootTestContextBootstrapper
+                - Found @SpringBootConfiguration com.itp.amazon.ItpPp1SpringbootApplication for test class com.itp.amazon.ItpPp1SpringbootApplicationTests
+2026-06-23 11:25:55
+                INFO 
+                o.s.b.d.r.RestartApplicationListener
+                - Restart disabled due to context in which it is running
+2026-06-23 11:25:55
+                INFO 
+                c.i.a.ItpPp1SpringbootApplicationTests
+                - Starting ItpPp1SpringbootApplicationTests using Java 17 with PID 18628 (started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-23 11:25:55
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplicationTests
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-23 11:25:55
+                INFO 
+                c.i.a.ItpPp1SpringbootApplicationTests
+                - The following 1 profile is active: "dev"
+2026-06-23 11:25:56
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-23 11:25:57
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 78 ms. Found 4 JPA repository interfaces.
+2026-06-23 11:25:58
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-23 11:25:58
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-23 11:25:58
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-23 11:25:58
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-23 11:25:58
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-23 11:25:59
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@7048d039
+2026-06-23 11:25:59
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-23 11:25:59
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-23 11:26:00
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-23 11:26:00
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-23 11:26:02
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-23 11:26:02
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-23 11:26:02
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-23 11:26:04
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-23 11:26:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started passwordEncoder
+2026-06-23 11:26:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-23 11:26:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed passwordEncoder
+2026-06-23 11:26:05
+                INFO 
+                c.i.a.ItpPp1SpringbootApplicationTests
+                - Started ItpPp1SpringbootApplicationTests in 10.417 seconds (process running for 20.928)
+2026-06-23 11:26:05
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-06-23 11:26:05
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Shutdown initiated...
+2026-06-23 11:26:05
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Shutdown completed.

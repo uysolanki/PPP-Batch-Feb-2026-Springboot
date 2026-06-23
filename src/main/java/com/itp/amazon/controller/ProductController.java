@@ -55,5 +55,11 @@ public class ProductController {
 		ProductDTO prodDTO=productService.addProduct(productDTO);
 		return new ResponseEntity<ProductDTO>(prodDTO, HttpStatus.CREATED);
 	}
+	
+	@PostMapping("/saveProductUsingDTO")
+	public ResponseEntity<ProductDTO> saveProductUsingDTO(@RequestBody ProductDTO productDTO)
+	{
+		return new ResponseEntity<ProductDTO>(productService.saveProductUsingDTO(productDTO),HttpStatus.CREATED);
+	}
 
 }

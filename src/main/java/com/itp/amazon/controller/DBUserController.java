@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.itp.amazon.entity.DBUser;
 import com.itp.amazon.entity.Role;
-import com.itp.amazon.entity.Student;
 import com.itp.amazon.repository.RoleRepository;
 import com.itp.amazon.service.DBUserService;
 
@@ -29,7 +28,7 @@ public class DBUserController {
 	public String saveUserForm(Model model)
 	{
 		DBUser user=new DBUser();
-		
+
 		List<Role> roles=roleRepository.findAll();
 		
 		model.addAttribute("user",user);
