@@ -3,6 +3,7 @@ package com.itp.amazon.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -24,6 +25,7 @@ public class DBUserController {
 	@Autowired
 	RoleRepository roleRepository;
 	
+	@PreAuthorize("hasAnyRole('USER','ADMIN')")
 	@RequestMapping("/saveUserForm")
 	public String saveUserForm(Model model)
 	{
@@ -44,6 +46,7 @@ public class DBUserController {
 	}
 	
 	
+	@PreAuthorize("hasAnyRole('USER','ADMIN')")
 	@RequestMapping("/showAllUsers")
 	public String showAllUsers(Model model)
 	{
@@ -52,6 +55,7 @@ public class DBUserController {
 		return "show-users";
 	}
 	
+	@PreAuthorize("hasRole('ADMIN')")
 	@RequestMapping("/deleteUserFE/{userid}")
 	public String deleteStudent(@PathVariable int userid)			
 	{
@@ -59,6 +63,7 @@ public class DBUserController {
 		return "redirect:/showAllUsers";
 	}
 	
+	@PreAuthorize("hasRole('ADMIN')")
 	@RequestMapping("/updateUserForm/{userid}")
 	public String updateStudentForm(@PathVariable int userid, Model model)
 	{

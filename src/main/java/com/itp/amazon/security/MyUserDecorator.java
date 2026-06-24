@@ -25,7 +25,7 @@ public class MyUserDecorator implements UserDetails {
         List<SimpleGrantedAuthority> authorities = new ArrayList<>();
          
         for (Role role : roles) {
-            authorities.add(new SimpleGrantedAuthority(role.getRolename()));
+            authorities.add(new SimpleGrantedAuthority("ROLE_"+role.getRolename()));
         }
          
         return authorities;
