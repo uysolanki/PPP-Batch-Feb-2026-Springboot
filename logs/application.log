@@ -21018,3 +21018,379 @@ java.lang.IllegalStateException: Neither BindingResult nor plain target object f
                 INFO 
                 com.zaxxer.hikari.HikariDataSource
                 - HikariPool-1 - Shutdown completed.
+2026-06-24 09:50:55
+                INFO 
+                o.h.validator.internal.util.Version
+                - HV000001: Hibernate Validator 8.0.1.Final
+2026-06-24 09:50:55
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Starting ItpPp1SpringbootApplication using Java 17 with PID 2892 (D:\EclipseJavaprogs2\ITP_PP1_Springboot\target\classes started by Umer Solanki in D:\EclipseJavaprogs2\ITP_PP1_Springboot)
+2026-06-24 09:50:55
+                DEBUG
+                c.i.a.ItpPp1SpringbootApplication
+                - Running with Spring Boot v3.3.5, Spring v6.1.14
+2026-06-24 09:50:55
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - The following 1 profile is active: "dev"
+2026-06-24 09:50:55
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-06-24 09:50:55
+                INFO 
+                o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor
+                - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-06-24 09:51:06
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-06-24 09:51:06
+                INFO 
+                o.s.d.r.c.RepositoryConfigurationDelegate
+                - Finished Spring Data repository scanning in 212 ms. Found 4 JPA repository interfaces.
+2026-06-24 09:51:12
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat initialized with port 8084 (http)
+2026-06-24 09:51:13
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Initializing ProtocolHandler ["http-nio-8084"]
+2026-06-24 09:51:13
+                INFO 
+                o.a.catalina.core.StandardService
+                - Starting service [Tomcat]
+2026-06-24 09:51:13
+                INFO 
+                o.a.catalina.core.StandardEngine
+                - Starting Servlet engine: [Apache Tomcat/10.1.31]
+2026-06-24 09:51:13
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring embedded WebApplicationContext
+2026-06-24 09:51:13
+                INFO 
+                o.s.b.w.s.c.ServletWebServerApplicationContext
+                - Root WebApplicationContext: initialization completed in 17935 ms
+2026-06-24 09:51:15
+                INFO 
+                o.h.jpa.internal.util.LogHelper
+                - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-06-24 09:51:15
+                INFO 
+                org.hibernate.Version
+                - HHH000412: Hibernate ORM core version 6.5.3.Final
+2026-06-24 09:51:15
+                INFO 
+                o.h.c.i.RegionFactoryInitiator
+                - HHH000026: Second-level cache disabled
+2026-06-24 09:51:16
+                INFO 
+                o.s.o.j.p.SpringPersistenceUnitInfo
+                - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-06-24 09:51:16
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Starting...
+2026-06-24 09:51:17
+                INFO 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@619527bf
+2026-06-24 09:51:17
+                INFO 
+                com.zaxxer.hikari.HikariDataSource
+                - HikariPool-1 - Start completed.
+2026-06-24 09:51:17
+                WARN 
+                org.hibernate.orm.deprecation
+                - HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-06-24 09:51:23
+                INFO 
+                o.h.e.t.j.p.i.JtaPlatformInitiator
+                - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-06-24 09:51:23
+                INFO 
+                o.s.o.j.LocalContainerEntityManagerFactoryBean
+                - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-06-24 09:51:27
+                WARN 
+                o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration
+                - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-06-24 09:51:28
+                INFO 
+                o.s.s.c.a.a.c.InitializeAuthenticationProviderBeanManagerConfigurer$InitializeAuthenticationProviderManagerConfigurer
+                - Global AuthenticationManager configured with AuthenticationProvider bean with name myAuthenticationProvider
+2026-06-24 09:51:28
+                WARN 
+                o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer
+                - Global AuthenticationManager configured with an AuthenticationProvider bean. UserDetailsService beans will not be used for username/password login. Consider removing the AuthenticationProvider bean. Alternatively, consider using the UserDetailsService in a manually instantiated DaoAuthenticationProvider.
+2026-06-24 09:51:30
+                INFO 
+                o.s.b.a.e.web.EndpointLinksResolver
+                - Exposing 15 endpoints beneath base path '/itp/amazon  '
+2026-06-24 09:51:30
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started passwordEncoder
+2026-06-24 09:51:30
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:51:30
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed passwordEncoder
+2026-06-24 09:51:33
+                INFO 
+                o.s.b.d.a.OptionalLiveReloadServer
+                - LiveReload server is running on port 35729
+2026-06-24 09:51:33
+                INFO 
+                o.a.coyote.http11.Http11NioProtocol
+                - Starting ProtocolHandler ["http-nio-8084"]
+2026-06-24 09:51:33
+                INFO 
+                o.s.b.w.e.tomcat.TomcatWebServer
+                - Tomcat started on port 8084 (http) with context path '/'
+2026-06-24 09:51:33
+                INFO 
+                c.i.a.ItpPp1SpringbootApplication
+                - Started ItpPp1SpringbootApplication in 39.957 seconds (process running for 42.178)
+2026-06-24 09:51:49
+                INFO 
+                o.a.c.c.C.[Tomcat].[localhost].[/]
+                - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-06-24 09:51:49
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Initializing Servlet 'dispatcherServlet'
+2026-06-24 09:51:49
+                INFO 
+                o.s.web.servlet.DispatcherServlet
+                - Completed initialization in 2 ms
+2026-06-24 09:51:49
+                WARN 
+                o.a.c.util.SessionIdGeneratorBase
+                - Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [138] milliseconds.
+2026-06-24 09:52:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-24 09:52:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:52:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-24 09:52:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-24 09:52:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:52:38
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-24 09:52:42
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-24 09:52:48
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-24 09:52:48
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@3c5b1b72, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2026-06-24 09:52:48
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-24 09:53:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-24 09:53:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:53:12
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-24 09:53:16
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-24 09:53:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-24 09:53:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:53:50
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-24 09:53:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveUserForm
+2026-06-24 09:53:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-24 09:53:54
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveUserForm
+2026-06-24 09:54:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveUserFE
+2026-06-24 09:54:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [DBUser(userid=0, username=test, password=test123, roles=[Role(roleid=1, rolename=ADMIN)], accountExpiryDate=null, accountLockedStatus=0, credExpiryDate=null, accountEnabledStatus=0)]
+2026-06-24 09:54:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started saveUser
+2026-06-24 09:54:04
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [DBUser(userid=0, username=test, password=test123, roles=[Role(roleid=1, rolename=ADMIN)], accountExpiryDate=null, accountLockedStatus=0, credExpiryDate=null, accountEnabledStatus=0)]
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveUser
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed saveUserFE
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudentsFE
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllStudents
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudents
+2026-06-24 09:54:05
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllStudentsFE
+2026-06-24 09:54:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started homepage
+2026-06-24 09:54:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:54:20
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed homepage
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started showAllUsers
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [{}]
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started getAllUsers
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements []
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed getAllUsers
+2026-06-24 09:54:36
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed showAllUsers
+2026-06-24 09:54:44
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Started accesssDenied
+2026-06-24 09:54:44
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Arguements [UsernamePasswordAuthenticationToken [Principal=com.itp.amazon.security.MyUserDecorator@4d362591, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=null], Granted Authorities=[ROLE_USER]]]
+2026-06-24 09:54:44
+                INFO 
+                com.itp.amazon.aspect.LoggingAspect
+                - Method Completed accesssDenied
+2026-06-24 16:55:43
+                WARN 
+                com.zaxxer.hikari.pool.HikariPool
+                - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4h2m31s841ms932µs100ns).
